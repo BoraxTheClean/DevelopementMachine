@@ -1,11 +1,10 @@
-name: Make template public
+name: Cloudformation CI
 
 on:
   push:
     branches:
     - master
     - main
-    - add-ci
 
 jobs:
   deploy:
