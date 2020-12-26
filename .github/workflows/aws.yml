@@ -28,6 +28,7 @@ jobs:
           --stack-name development-machine \
           --no-fail-on-empty-changeset \
           --region us-east-1 \
+          --parameter-overrides Key=${{ secrets.SSH_KEY }}
           --capabilities CAPABILITY_AUTO_EXPAND CAPABILITY_IAM
     - uses: jakejarvis/s3-sync-action@master
       with:
